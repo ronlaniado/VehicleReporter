@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&display=swap");
+
+body {
+	background-image: url("./assets//bg.png");
+	background-repeat: repeat;
+	font-family: "Poppins", "Times New Roman", Times, serif;
+	color: white;
+	padding-bottom: 30px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	height: 45px;
+	padding-top: 22px;
+	margin-bottom: 72px;
+}
+
+.logo-text {
+	margin-left: 32px;
+	font-weight: 400;
+	font-size: 20px;
+	font-family: "Poppins", sans-serif;
+}
+
+.logo-bold {
+	font-weight: 800;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 48px;
+	max-width: 468px;
+	background: #ffffff;
+	box-shadow: 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.030926), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0444282),
+		0px 12.5216px 10.0172px rgba(0, 0, 0, 0.055), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0655718),
+		0px 41.7776px 33.4221px rgba(0, 0, 0, 0.079074), 0px 100px 80px rgba(0, 0, 0, 0.11);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-title {
+	color: #212121;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.container-subtitle {
+	color: #414141;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+table {
+	color: #414141;
+	margin-top: 8px;
+	font-size: 12px;
+	line-height: 18px;
+	width: 100%;
+}
+
+th,
+td {
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	padding: 16px;
+}
+
+.table-title {
+	color: #212121;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.footer {
+	margin-top: 25px;
+	position: fixed;
+	height: 64px;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: #9c9c9c;
+	text-align: center;
+	display: flex;
+	line-height: 64px;
+	font-size: 12px;
+}
+
+.footer-left {
+	width: 100%;
+	float: left;
+}
+
+.footer-right {
+	color: #414141;
+	float: right;
+	width: 100%;
+}
+
+.mail {
+	height: 16px;
+	width: 16px;
+}
+
+@media only screen and (max-width: 570px) {
+	.outer {
+		padding: 16px;
+	}
+
+	.container {
+		padding: 16px;
+	}
+
+	.footer {
+		padding: 0px;
+		width: 100%;
+		display: flex;
+		padding-top: 16px;
+		align-items: center;
+		flex-direction: column;
+		line-height: 0px;
+		justify-content: center;
+	}
+}
