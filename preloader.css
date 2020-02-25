@@ -5,6 +5,7 @@ body {
 	background-repeat: repeat;
 	font-family: "Poppins", "Times New Roman", Times, serif;
 	color: white;
+	background-size: 100%;
 	padding-bottom: 30px;
 }
 
@@ -101,6 +102,7 @@ td {
 .footer-right {
 	color: #414141;
 	float: right;
+	font-weight: 600;
 	width: 100%;
 }
 
