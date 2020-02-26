@@ -32,13 +32,12 @@ body {
 .outer {
 	padding: 0;
 	margin: 0;
-	background-color: hotpink;
 	display: flex;
 	flex-direction: row;
-	justify-content: stretch;
+	justify-content: center;
 }
 
-.container {
+.container-records {
 	padding: 48px;
 	max-width: 468px;
 	background: #ffffff;
@@ -46,6 +45,8 @@ body {
 		0px 12.5216px 10.0172px rgba(0, 0, 0, 0.055), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0655718),
 		0px 41.7776px 33.4221px rgba(0, 0, 0, 0.079074), 0px 100px 80px rgba(0, 0, 0, 0.11);
 	border-radius: 5px;
+	margin-left: 25px;
+	margin: 0 35px 0 35px;
 }
 
 .container-title {
@@ -107,6 +108,7 @@ td {
 }
 
 .container-payment {
+	margin: 0 35px 0 35px;
 	padding: 48px;
 	max-width: 468px;
 	background: #ffffff;
