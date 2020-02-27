@@ -17,16 +17,31 @@
 		</div>
 	</head>
 	<body>
+		<script>
+			function togglePayment() {
+				console.log("button worked");
+				let a = document.getElementById("container-payment");
+				let b = document.getElementById("container-billing");
+				if (a.style.display === "none") {
+					a.style.display = "block";
+					b.style.display = "none";
+				} else {
+					a.style.display = "none";
+					b.style.display = "block";
+				}
+			}
+		</script>
 		<div class="outer">
 			<div class="container-records">
-				<h1 class="container-title">72 Historical Records</h1>
+				<h1 class="container-title">72 Historical Records <span class="mobile-title">Found</span></h1>
+				<p class="details-link">View more details</p>
 				<h2 class="container-subtitle">2007 Ford F250 Super Duty King Ranch / Lariat / XL / XLT</h2>
 				<div class="container-info">
 					<p>VIN: 1FTSW20P27EB48115</p>
 					<p>Style / Body: Crew Cab 4D | Engine: 6.0L V8 FI</p>
 					<p>Country of Assembly: United States</p>
 				</div>
-				<table>
+				<table class="container-table">
 					<tr>
 						<th class="table-title">Accident History</th>
 						<td class="center">
@@ -83,7 +98,7 @@
 					</tr>
 				</table>
 			</div>
-			<div class="container-payment">
+			<div class="container-payment" id="container-payment">
 				<h1 class="container-payment-title">Only $14.99</h1>
 				<h2 class="container-payment-subtitle">Get your full vehicle history report</h2>
 				<form>
@@ -102,7 +117,40 @@
 							<img src="assets/amex.png" class="accepted-card" alt="amex" />
 							<img src="assets/mater.png" class="accepted-card" alt="mastercard" />
 						</div>
-						<button class="btn btn-primary btn-lg">Next Step</button>
+						<button class="btn btn-primary btn-lg next-step-btn" type="button" onclick="togglePayment()">
+							Next Step
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="container-payment-2" id="container-billing">
+				<h1 class="container-payment-title2">Billing Address</h1>
+				<h2 class="container-payment-subtitle">Get your full vehicle history report</h2>
+				<form>
+					<div class="form-group payment-form">
+						<input placeholder="Street name" class="form-control" />
+						<input placeholder="City" class="form-control" />
+						<div class="address-details">
+							<select id="inputState" class="form-control state">
+								<option selected>State</option>
+								<option>...</option>
+							</select>
+							<input class="form-control zip" placeholder="Zip Code" />
+						</div>
+						<input class="form-control" placeholder="Email" />
+						<input class="form-control" placeholder="Phone" />
+						<div class="accepted-cards">
+							<img src="assets/discover.png" alt="discover" class="accepted-card" />
+							<img src="assets/visa.png" class="accepted-card" alt="visa" />
+							<img src="assets/amex.png" class="accepted-card" alt="amex" />
+							<img src="assets/mater.png" class="accepted-card" alt="mastercard" />
+						</div>
+						<div class="buttons">
+							<button class="btn btn-primary  pay-btn">Pay with Card</button>
+							<button type="button" class="btn btn-outline-primary details-btn" onclick="togglePayment()">
+								Edit Details
+							</button>
+						</div>
 					</div>
 				</form>
 			</div>
