@@ -30,11 +30,31 @@
 					b.style.display = "block";
 				}
 			}
+
+			function toggleDetails() {
+				console.log("button worked");
+				let subtitle = document.getElementsByClassName("container-subtitle")[0];
+				let info = document.getElementsByClassName("container-info")[0];
+				let table = document.getElementsByClassName("container-table")[0];
+				let details = document.getElementsByClassName("details-link")[0];
+				if (subtitle.style.display === "block") {
+					subtitle.style.display = "none";
+					info.style.display = "none";
+					table.style.display = "none";
+					details.innerHTML = "View more details";
+				} else {
+					subtitle.style.display = "block";
+					info.style.display = "block";
+					table.style.display = "block";
+					table.style.paddingBottom = "25px";
+					details.innerHTML = "View less details";
+				}
+			}
 		</script>
 		<div class="outer">
 			<div class="container-records">
 				<h1 class="container-title">72 Historical Records <span class="mobile-title">Found</span></h1>
-				<p class="details-link">View more details</p>
+				<p class="details-link" onclick="toggleDetails()">View more details</p>
 				<h2 class="container-subtitle">2007 Ford F250 Super Duty King Ranch / Lariat / XL / XLT</h2>
 				<div class="container-info">
 					<p>VIN: 1FTSW20P27EB48115</p>
@@ -107,9 +127,9 @@
 						<input placeholder="Last Name on Card" class="form-control" />
 						<input placeholder="Card Number" class="form-control" />
 						<div class="container-card-info">
-							<input class="form-control" placeholder="Exp MM" />
-							<input class="form-control middle-card" placeholder="Exp YYYY" />
-							<input class="form-control" placeholder="CVC" />
+							<input class="form-control container-card" placeholder="Exp MM" />
+							<input class="form-control container-card middle-card" placeholder="Exp YYYY" />
+							<input class="form-control container-card" placeholder="CVC" />
 						</div>
 						<div class="accepted-cards">
 							<img src="assets/discover.png" alt="discover" class="accepted-card" />
