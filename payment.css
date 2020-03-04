@@ -2,7 +2,7 @@
 
 body {
 	background-image: url("./assets//bg.png");
-	background-size: 100%;
+	background-size: cover;
 	font-family: "Poppins", "Times New Roman", Times, serif;
 	color: white;
 	padding-bottom: 30px;
@@ -281,7 +281,7 @@ td {
 
 	.container-records {
 		margin-bottom: 50px;
-		padding: 36px 0px 32px 48px;
+		padding: 36px 36px 16px 36px;
 	}
 
 	.container-subtitle {
@@ -335,7 +335,7 @@ td {
 @media only screen and (max-width: 436px) {
 	.container-records {
 		margin-bottom: 35px;
-		padding: 16px 16px 8px 24px;
+		padding: 24px 16px 8px 24px;
 	}
 	.container-title {
 		font-size: 18px;
@@ -352,5 +352,19 @@ td {
 
 	.container-payment-subtitle {
 		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 865px) {
+	.container-subtitle {
+		display: block !important;
+	}
+
+	.container-info {
+		display: block !important;
+	}
+
+	.container-table {
+		display: block !important;
 	}
 }
